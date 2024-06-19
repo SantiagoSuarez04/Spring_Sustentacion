@@ -1,9 +1,9 @@
 package com.darkcode.app.repository;
 
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -20,5 +20,17 @@ public class TutorialRepository {
 
     @Column(name = "Descripcion")
     private String descripcion;
+
+    @Column(name = "Url")
+    private String url;
+
+    @Column(name = "Estado")
+    private String estado;
+
+    @Column(name= "Fecha")
+    private String fecha;
+
+    @Column(name = "Autor")
+    private String autor;
     
 }

@@ -11,10 +11,18 @@
             <tr>
                 <th>Nombre</th>
                 <th>Descripcion</th>
+                <th>Url</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>Autor</th>
             </tr>
             <tr th:each="tutorial: ${tutorialAttribute}">
                <td th:text="${tutoriales.Nombre}"></td> 
                <td th:text="${tutoriales.Descripcion}"></td> 
+               <td th:text="${tutoriales.Url}"></td> 
+               <td th:text="${tutoriales.Estado}"></td> 
+               <td th:text="${tutoriales.Fecha}"></td> 
+               <td th:text="${tutoriales.Autor}"></td> 
             </tr>
         </table>
     </body>
